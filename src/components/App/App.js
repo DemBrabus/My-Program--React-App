@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.scss';
+import ControlCenter from '../ControlCenter/ControlCenter';
 
 function App() {
   return (
     <div className="App" data-react="react">
-      <h1>Hello there from my awesome app</h1>
+      <ControlCenter />
     </div>
   );
 }

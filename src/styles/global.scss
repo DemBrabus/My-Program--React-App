@@ -1,5 +1,6 @@
 
 @import-normalize;
+@import './variables.scss';
 
 *, ::before, ::after {
   margin: 0;
@@ -11,6 +12,8 @@ html {
   box-sizing: border-box;
   font-size: 10px;
   font-family: montserrat, sans-serif;
+  color: color(textPrimary);
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -20,6 +23,18 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  scrollbar-color: salmon #141414;
+  scrollbar-width: .5rem;
+}
+
+body::-webkit-scrollbar {
+  width: .5rem
+}
+body::-webkit-scrollbar-track {
+  background: #141414;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgb(168, 228, 216);
 }
 
 code {
@@ -27,15 +42,16 @@ code {
     monospace;
 }
 
-
-h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, span {
+h1, h2, h3, h4, h5, h6, p, a, li, span {
   font-size: 10px;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 ol, ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
