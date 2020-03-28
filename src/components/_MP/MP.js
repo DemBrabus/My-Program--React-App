@@ -1,13 +1,13 @@
 import React from 'react';
-import './App.scss';
 import ControlCenter from '../ControlCenter/ControlCenter';
+import classes from './MP.module.scss';
 
-function App() {
+const MP = () => {
   return (
-    <div className="App" data-react="react">
+    <div id="MP" className={ classes.MP }>
       <ControlCenter />
     </div>
   );
 }
 
-export default App;
+export default MP;

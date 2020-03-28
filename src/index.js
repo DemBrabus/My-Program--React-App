@@ -14,7 +14,7 @@ import authReducer from './store/reducers/authReducer';
 import './styles/global.scss';
 
 //App Component
-import App from './components/App/App';
+import MP from './components/_MP/MP';
 import * as serviceWorker from './misc/serviceWorker';
 
 //Init Redux / State
@@ -28,9 +28,9 @@ const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)))
 ReactDOM.render(
             <Provider store={ store }>
               <BrowserRouter>
-                <App /> 
+                <MP data-react="MY Program" /> 
               </BrowserRouter>
             </Provider>
-                , document.getElementById('root'));
+                        , document.getElementById('root'));
 
 serviceWorker.unregister();
