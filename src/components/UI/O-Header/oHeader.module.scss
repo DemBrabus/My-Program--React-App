@@ -1,3 +1,5 @@
+@import '../../../styles/variables.scss';
+
 .OHeader {
   position: fixed;
   top: 0;
@@ -11,15 +13,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  background-color: color(headerBG);
 }
 
 
 .LogoWrap {
-  padding: 5px 10px;
 }
   .Name {
     font-size: 2.4em;
     text-transform: uppercase;
+    font-family: font(aktiv);
   }
 
 
@@ -32,7 +36,18 @@
   .NavLink {
     font-size: 1.4em;
     padding: 7px;
-    margin-left: 20px
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .SignOut {
+    font-size: 1.4em;
+    padding: 7px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .active {
+    font-weight: 600;
   }
 
 
@@ -53,7 +68,14 @@
     height: 2px;
     background-color: rgb(65, 76, 87);
   }
-@media screen and (max-width: 1000px){
+
+
+
+@media screen and (max-width: 900px){
+  .OHeader {
+    padding: 0px 20px;
+    height: 60px;
+  }
   .Nav {
     display: none;
   }

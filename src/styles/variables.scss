@@ -1,7 +1,16 @@
 $color: (
   black: #000,
   white: #FFF,
-  textPrimary: #454545
+
+  textPrimary: #505256,
+
+  
+
+  headerBG: #FFF,
+
+  menuText: #FFF,
+  menuBG: #3a4046
+
 );
 @function color($colorName){
     @return map-get($color, $colorName)
@@ -18,8 +27,8 @@ $breakPoints: (
 }
 
 $fonts: (
-  regular: aktiv-grotesk,
-  condensed: aktiv-grotesk-condensed,
+  mont: montserrat,
+  aktiv: aktiv-grotesk-extended
 );
 @function font($fontFamily){
     @return map-get($fonts, $fontFamily)

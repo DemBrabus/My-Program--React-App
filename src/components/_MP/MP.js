@@ -4,7 +4,7 @@ import classes from './MP.module.scss';
 
 const MP = () => {
   return (
-    <div id="MP" className={ classes.MP }>
+    <div id="MP" className={ classes.MP } data-react data-firebase>
       <ControlCenter />
     </div>
   );

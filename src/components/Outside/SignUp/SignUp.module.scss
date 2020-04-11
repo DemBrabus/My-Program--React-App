@@ -3,3 +3,24 @@
   display: flex;
   justify-content: center;
 }
+  .Content {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+    .PageTitle {
+      font-size: 2.4em;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    .PasswordText {
+      margin-right: 100%;
+      margin-left: 10px;
+      white-space: nowrap;
+    }
+
+@media screen and (max-width: 1000px){
+  .Home {
+
+  }
+}

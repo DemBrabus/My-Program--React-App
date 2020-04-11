@@ -1,0 +1,89 @@
+@import '../../../styles/variables.scss';
+
+.OMenu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  z-index: 10;
+
+  width: 100%;
+  max-width: 450px;
+  height: 100vh;
+
+  color: color(menuText);
+  background-color: color(menuBG);
+
+  transition: right .6s ease-in-out;
+}
+  .OMenuOpen {
+    right: 0;
+  }
+
+
+.OMenuInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+.ExitWrap {
+  width: 100%;
+  height: 80px;
+  padding: 0px 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+  .Exit {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+    .ExitBar {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: color(white);
+    }
+      .ExitBar:first-child {
+        transform: rotate(45deg);
+      }
+      .ExitBar:last-child {
+        transform: rotate(-45deg);
+      }
+
+@media screen and (max-width: 1000px){
+  .ExitWrap {
+    width: 100%;
+    height: 60px;
+    padding: 0px 20px;
+  }
+}
+
+
+.Nav {
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 10%;
+}
+  .NavLink {
+    font-size: 3.2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .SignOut {
+    font-size: 3.2em;
+    padding: 7px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+    .active {
+      font-weight: 900;
+    }

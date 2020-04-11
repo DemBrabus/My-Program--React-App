@@ -1,0 +1,18 @@
+.MainContent {
+  width: 100%;
+  padding: 80px 35px;
+  padding-bottom: 20px;
+}
+  .MPMainContent {
+    padding: 0px
+  }
+
+@media screen and (max-width: 900px){
+  .MainContent {
+    padding: 60px 20px;
+    padding-bottom: 20px;
+  }
+    .MPMainContent {
+      padding: 0px
+    }
+}
